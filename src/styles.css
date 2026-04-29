@@ -1,0 +1,36 @@
+#snake_list, #eliminated_list {
+    padding: 8px;
+    width: 10vw;
+    overflow-y: auto;
+    height: 585px;
+    border-bottom: 1px solid lightgray;
+}
+
+#snake_list_header, #elim_header {
+    padding: 0px 0px 0px 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.snake_card {
+    padding: 0px 0px 0px 4px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.snake_card p, #snake_list_header p, #elim_header p{
+    margin: 0px;
+}
+
+.snake_card div{
+    width: 25%;
+}
+
+.snake_card.selected {
+    border: 2px solid black;
+}
+
