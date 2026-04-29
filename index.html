@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebGPU Graph Rendering</title>
+
+    <style>
+        canvas {
+            border: 1px solid #ddd;
+            background-color: white;
+            margin-bottom: 15px;
+            margin: 0;
+        }
+    </style>
+<script defer src="main.js"></script></head>
+<body>
+    <div style="display: flex; align-items: center; flex-direction: column; width: 100%;">
+        <h1>Snake Pit</h1>
+        <p style="margin-top: 0px; margin-bottom: 2px;">Select a snake on the left to guess a winner</p>
+        <p style="margin-top: 0px;">Select pit or follow mode before starting</p>
+    </div>
+    <div div style="display: flex; flex-direction: row; justify-content: center;">
+        <div id="snake_list">
+            <div id="snake_list_header">
+                <p>ID</p>
+                <div>Color</div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <canvas id="webgpu-canvas" class="img-fluid"  width="600" height="600" style="background-color: white;"></canvas>
+            <div id="controls">
+                <div class="slider">
+                    <label for="amount">Number of Snakes:</label>
+                    <input id="amount" type="range" min="1" max="200" value="1">
+                    <span id="amount_value">200</span>
+                </div>
+                <div class="slider">
+                    <label for="length">Snake Length:</label>
+                    <input id="length" type="range" min="1" max="30" value="30">
+                    <span id="length_value">10</span>
+                </div>
+                <div style="display: flex; flex-direction: column; margin-top: 8px; gap: 4px;">
+                    <button id="start_sim">Start</button>
+                    <button id="pit">pit</button>
+                    <button id="follow">follow</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="eliminated_list">
+            <div id="elim_header">
+                <p>ID</p>
+                <div>Color</div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
