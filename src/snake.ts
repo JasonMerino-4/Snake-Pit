@@ -118,6 +118,7 @@ async function main() {
         start = false;
         const target = event.target as HTMLInputElement;
         const value = parseInt(target.value);
+        document.getElementById("length_value").textContent = target.value;
 
         snakeLength = value;
         snakeMeta[0] = value;
@@ -441,7 +442,7 @@ async function main() {
                 view: targetTexture.createView(),
                 loadOp: "clear",
                 storeOp: "store",
-                clearValue: { r: 0.0, g: 0.0, b: 0.0, a: 0.0 } 
+                clearValue: { r: 0.0, g: 0.0, b: 0.0, a: 1.0 } 
             }]
         });
 

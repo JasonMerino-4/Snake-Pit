@@ -1,6 +1,6 @@
 #snake_list, #eliminated_list {
     padding: 8px;
-    width: 10vw;
+    min-width: 120px;
     overflow-y: auto;
     height: 585px;
     border-bottom: 1px solid lightgray;
