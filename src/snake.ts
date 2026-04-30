@@ -387,7 +387,7 @@ async function main() {
                 }
             }
         } catch (e) {
-
+            console.warn("Read aborted");
         } finally {
             reading = false;
         }
