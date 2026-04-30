@@ -122,7 +122,6 @@ async function main() {
 
         snakeLength = value;
         snakeMeta[0] = value;
-        console.log("new snake length", snakeLength);
 
         snakes = [];
         device.queue.writeBuffer(snakeMetaBuffer, 0, snakeMeta);
@@ -182,8 +181,6 @@ async function main() {
             });
 
             card.classList.add("selected");
-            
-            console.log("Selected snake index:", idx);
         });
 
         const idText = document.createElement("p");
@@ -390,7 +387,7 @@ async function main() {
                 }
             }
         } catch (e) {
-            console.warn("Read aborted");
+
         } finally {
             reading = false;
         }
