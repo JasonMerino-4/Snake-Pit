@@ -1,8 +1,12 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 #snake_list, #eliminated_list {
     padding: 8px;
     min-width: 120px;
     overflow-y: auto;
-    height: 585px;
+    height: 602px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -32,5 +36,10 @@
 
 .snake_card.selected {
     border: 2px solid black;
+}
+
+#controls {
+    padding-left: 35%;
+    padding-right: 35%;;
 }
 
